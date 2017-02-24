@@ -2,7 +2,7 @@
 
 ## Introduction
 
-CM Authenticator is an easy to use authentication product that ensures the identity of your online users by adding an extra factor of authentication via the mobile phone.
+[CM Authenticator](https://www.cmtelecom.com/products/security/authenticator) is an easy to use authentication product that ensures the identity of your online users by adding an extra factor of authentication via the mobile phone.
 
 When a user tries to login on your environment, the extra authentication will be presented to verify their attempt. The user can approve or deny this request instantly and securely via the CM Authenticator app on their smartphone. If there is no app available, an SMS can be received instead. Once the attempt has been approved, the user can then safely proceed.
 
@@ -34,7 +34,7 @@ For more in-depth information, check the [API documentation](https://docs.cmtele
 
 ## Installation
 
-Use composer to manage your dependencies and download the library:
+Use composer to manage your dependencies and download [the library](https://packagist.org/packages/cmsecure/authenticator-client):
 
 ```
 $ composer require cmsecure/authenticator-client
@@ -91,8 +91,7 @@ $authStatus = $auth->auth_status;
 
 `$authStatus`: the current [authentication status](#authentication-states)
 
-
- ### Verify instant token
+### Verify instant token
 
 ```php
 try {
