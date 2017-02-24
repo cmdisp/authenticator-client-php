@@ -1,0 +1,8 @@
+<?php
+define('USERNAME', 'demo');
+define('PASSWORD', '123456');
+define('PHONE_NUMBER', '+31612345678');
+
+define('ENVIRONMENT_ID', 'YOUR-ENVIRONMENT-ID');
+define('ENVIRONMENT_SECRET', 'YOURENVIRONMENTSECRET');
+define('EXPIRY', 60);
