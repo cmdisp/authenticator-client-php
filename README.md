@@ -55,7 +55,7 @@ $authenticator = new Authenticator($environmentId, $environmentSecret);
 ```php
 $auth = $authenticator->requestAuthentication($phoneNumber, $authType, $messageType, $expiry, $ip);
 if (isset($auth->qr_url)) {
-    echo "<img src='$authentication->qr_url'>";
+    echo "<img src='$auth->qr_url'>";
 }
 ```
 
@@ -81,15 +81,15 @@ $auth = $authenticator->getAuthentication($authId, $authType);
 
 `$authId`: the ID of the authentication request, returned when the request was created
 
-`authType`: the [authentication type](#authentication-types)
+`$authType`: the [authentication type](#authentication-types)
+
+`$authStatus`: the current [authentication status](#authentication-states)
 
 For example, to check the authentication status:
 
 ```php
 $authStatus = $auth->auth_status;
 ```
-
-`$authStatus`: the current [authentication status](#authentication-states)
 
 ### Verify instant token
 
